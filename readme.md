@@ -1,14 +1,12 @@
-yolox官方仓库：
-yolox official:
-https://github.com/Megvii-BaseDetection/YOLOX
-bytetrack官方仓库：
-bytetrack official:
-https://github.com/ifzhang/ByteTrack
+## Get models and weight
+You can get yolox model and default model weight from [yolox official](https://github.com/Megvii-BaseDetection/YOLOX) and get bytetrack trained model weight from [bytetrack official](https://github.com/ifzhang/ByteTrack)
 
+## Modify your own model config
 detector.py中配置了yolox和bytetrack_x_mot17两个模型的设置，可以根据自己的需求添加新配置。
-The detector.py is configured with the settings for both models, and you can add new configurations to suit your needs.
 
-使用方法：
+The settings of the yolox and bytetrack_x_mot17 models are configured in detector.py. You can add new configurations according to your own needs.
+
+## Import module
 Usage:
 
 ```python
@@ -27,5 +25,9 @@ model = YOLOX(
 outputs = model(img)
 ```
 得到的outputs形式如下：
+
 The obtained outputs are of the following form: 
-    outputs (x1, y1, x2, y2, obj_conf, class_conf, class_pred)
+
+```
+outputs (x1, y1, x2, y2, obj_conf, class_conf, class_pred)
+```
