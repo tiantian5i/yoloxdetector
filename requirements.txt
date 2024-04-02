@@ -1,0 +1,6 @@
+# TODO: Update with exact module version
+numpy
+yolox
+opencv-python
+loguru
+pytorch
