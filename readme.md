@@ -10,7 +10,7 @@ The settings of the yolox and bytetrack_x_mot17 models are configured in detecto
 Usage:
 
 ```python
-from yoloxdetector import YOLOX
+from yoloxdetector.detector import YOLOX
 model = YOLOX(
     test_size=(640, 1088),
     model_weighs="../bytetrack_x_mot17.pt",
